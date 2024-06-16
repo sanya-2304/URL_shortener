@@ -11,7 +11,7 @@ const staticRoute = require('./routes/staticRouter');
 const { restrictToLoggedUserOnly,checkAuth } = require('./middlewares/auth');
 const userRoute = require('./routes/user');
 require('dotenv').config();
-const port = process.env.PORT || 2201;
+const PORT = process.env.PORT || 2201;
 
 app.set('view engine', 'ejs');
 app.set('views', path.resolve('./views'));
